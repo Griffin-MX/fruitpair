@@ -1,0 +1,41 @@
+body
+{
+    margin:auto;
+    background-image:url("background.jpg");
+    background-size:100%;
+}
+
+#background
+{
+	margin-top:275px;
+}
+
+#title
+{
+	width:350px;
+	margin:auto;
+}
+
+#a
+{
+	width:16%;
+	margin:auto;
+}
+
+#b
+{
+	width:16%;
+	margin:auto;
+}
+
+#c
+{
+	width:16%;
+	margin:auto;
+}
+
+h1
+{
+	color:pink;
+	font-size:60px;
+}
