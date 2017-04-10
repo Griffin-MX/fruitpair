@@ -21,3 +21,9 @@ button.action {
     background-color: rgba(0,0,0,0);
     font-size: 1.5em;
 }
+
+.cards
+{
+    margin:5px;
+	float:left;
+}
