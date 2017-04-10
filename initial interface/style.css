@@ -1,13 +1,10 @@
-<<<<<<< HEAD
 body
 {
     margin:auto;
-    background-image:url("background.jpg");
+    background-image:url("../img/background.jpg");
     background-size: 100% 100%;
 }
 
-=======
->>>>>>> 73e14f24e602e75bac9b9f46c50d74beb5b032f8
 #background
 {
 	margin-top:200px;
@@ -15,7 +12,6 @@ body
 
 #title, #a, #b, #c
 {
-<<<<<<< HEAD
 	width:400px;
 	margin:auto;
 }
@@ -23,26 +19,17 @@ body
 #a,#b,#c
 {
 	width:16%;
-	margin:auto;
 	height: 100px;
 	font-size: 60px;
 	color: white;
 	background-color: chocolate;
 	text-align: center;
 	border-radius: 50%;
-=======
-	text-align: center;
 	margin: 0 auto;
->>>>>>> 73e14f24e602e75bac9b9f46c50d74beb5b032f8
 }
 
 h1
 {
 	color:pink;
-<<<<<<< HEAD
 	font-size:70px;
 }
-=======
-	font-size:60px;
-}
->>>>>>> 73e14f24e602e75bac9b9f46c50d74beb5b032f8
