@@ -2,40 +2,34 @@ body
 {
     margin:auto;
     background-image:url("background.jpg");
-    background-size:100%;
+    background-size: 100% 100%;
 }
 
 #background
 {
-	margin-top:275px;
+	margin-top:200px;
 }
 
 #title
 {
-	width:350px;
+	width:400px;
 	margin:auto;
 }
 
-#a
+#a,#b,#c
 {
 	width:16%;
 	margin:auto;
-}
-
-#b
-{
-	width:16%;
-	margin:auto;
-}
-
-#c
-{
-	width:16%;
-	margin:auto;
+	height: 100px;
+	font-size: 60px;
+	color: white;
+	background-color: chocolate;
+	text-align: center;
+	border-radius: 50%;
 }
 
 h1
 {
 	color:pink;
-	font-size:60px;
+	font-size:70px;
 }

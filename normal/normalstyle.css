@@ -3,6 +3,7 @@ body
     margin:auto;
     background-image:url("background.jpg");
     background-size:100%;
+	width: 900px;
 }
 
 #title
@@ -10,13 +11,6 @@ body
 	margin-top:275px;
 	width:9000px;
 }
-
-#a
-{
-    width:900px;
-	margin:auto;
-}
-
 #b
 {
 	margin-left:15px;
@@ -24,33 +18,9 @@ body
 	width:600px;
 }
 
-#c
-{
-    margin:5px;
-	float:left;
-}
-
-#d
-{
-    margin:5px;
-	float:left;
-}
-
-#e
-{
-    margin:5px;
-	float:left;
-}
-
-#f
-{
-    margin:5px;
-	float:left;
-}
-
 .back
 {
-	width:175px;
+	width:100%;
 }
 
 h1
@@ -112,28 +82,9 @@ h1
 {
 	color:#FF0033;
 }
-
-#ha
-{
-	float:left;
-	margin:5px;
+.cards{
+	width: 16.5%;
+	margin-left: 4%;
+	float: left;
+	margin-top: 10px;
 }
-
-#hb
-{
-	float:left;
-	margin:5px;
-}
-
-#hc
-{
-	float:left;
-	margin:5px;
-}
-
-#hd
-{
-	float:left;
-	margin:5px;
-}
-

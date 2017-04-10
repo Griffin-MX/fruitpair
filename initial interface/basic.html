@@ -2,15 +2,20 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="style.css"/>
+	<script>
+		function jump(address) {
+			window.location.href=address;
+        }
+	</script>
 </head>
 
 <body>
     <div>
         <div id="background">
 	        <div id="title"><h1>Fruit Pairs</h1></div>
-	        <div id="a"><img src="easy.jpg" type="button" id="easy"/></div></br>
-	        <div id="b"><img src="normal.jpg" type="button" id="normal"/></div></br>
-	        <div id="c"><img src="hard.jpg" type="button" id="hard"/></div>
+	        <div id="a" onclick="jump('../easy/easy.html')">Easy</div></br>
+	        <div id="b" onclick="jump('../normal/normal.html')">Normal</div></br>
+	        <div id="c" onclick="jump('../hard/hard.html')">Hard</div>
 	    </div>
 	</div>
 </body>
