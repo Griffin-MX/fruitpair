@@ -17,33 +17,9 @@
 	width:600px;
 }
 
-#c
-{
-    margin:5px;
-	float:left;
-}
-
-#d
-{
-    margin:5px;
-	float:left;
-}
-
-#e
-{
-    margin:5px;
-	float:left;
-}
-
-#f
-{
-    margin:5px;
-	float:left;
-}
-
 .back
 {
-	width:110px;
+	width:85px;
 }
 
 h1
@@ -63,37 +39,35 @@ h1
 {
 	background-color:#C8C8C8;
 	height:60px;
-	margin-LEFT:5px;
-	margin-right:5px;
-	margin-top:5px;
+	margin:0 5px 0 5px;
 }
 
 #i
 {
 	background-color:#330000;
 	height:60px;
-	margin:5px;
+	margin:0 5px 0 5px;
 }
 
 #j
 {
 	height:245px;
 	background-color:#00CCFF;
-	margin:5px;
+	margin:0 5px 0 5px;
 }
 
 #k
 {
 	height:60px;
 	background-color:#33CC66;
-	margin:5px;
+	margin:0 5px 0 5px;
 }
 
 #l
 {
 	height:60px;
 	background-color:#339933;
-	margin:5px;
+	margin:0 5px 0 5px;
 }
 
 #time
@@ -104,34 +78,4 @@ h1
 #cscore
 {
 	color:#FF0033;
-}
-
-#ha
-{
-	float:left;
-	margin:5px;
-}
-
-#hb
-{
-	float:left;
-	margin:5px;
-}
-
-#hc
-{
-	float:left;
-	margin:5px;
-}
-
-#hd
-{
-	float:left;
-	margin:5px;
-}
-
-.elements
-{
-	float:left;
-	margin:5px;
 }
