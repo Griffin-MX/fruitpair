@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body
 {
     margin:auto;
@@ -6,6 +7,8 @@ body
 	width: 900px;
 }
 
+=======
+>>>>>>> 73e14f24e602e75bac9b9f46c50d74beb5b032f8
 #title
 {
 	margin-top:275px;
@@ -18,6 +21,16 @@ body
 	width:600px;
 }
 
+<<<<<<< HEAD
+=======
+.cards
+{
+    margin:5px;
+	float:left;
+}
+
+
+>>>>>>> 73e14f24e602e75bac9b9f46c50d74beb5b032f8
 .back
 {
 	width:100%;
@@ -27,7 +40,7 @@ h1
 {
 	color:pink;
 	font-size:60px;
-	
+
 }
 
 #g
@@ -40,37 +53,35 @@ h1
 {
 	background-color:#C8C8C8;
 	height:60px;
-	margin-LEFT:5px;
-	margin-right:5px;
-	margin-top:5px;
+	margin:0 5px 0 5px;
 }
 
 #i
 {
 	background-color:#330000;
 	height:60px;
-	margin:5px;
+	margin:0 5px 0 5px;
 }
 
 #j
 {
 	height:245px;
 	background-color:#00CCFF;
-	margin:5px;
+	margin:0 5px 0 5px;
 }
 
 #k
 {
 	height:60px;
 	background-color:#33CC66;
-	margin:5px;
+	margin:0 5px 0 5px;
 }
 
 #l
 {
 	height:60px;
 	background-color:#339933;
-	margin:5px;
+	margin:0 5px 0 5px;
 }
 
 #time
@@ -82,9 +93,12 @@ h1
 {
 	color:#FF0033;
 }
+<<<<<<< HEAD
 .cards{
 	width: 16.5%;
 	margin-left: 4%;
 	float: left;
 	margin-top: 10px;
 }
+=======
+>>>>>>> 73e14f24e602e75bac9b9f46c50d74beb5b032f8
