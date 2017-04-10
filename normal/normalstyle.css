@@ -24,29 +24,12 @@ body
 	width:600px;
 }
 
-#c
+.cards
 {
     margin:5px;
 	float:left;
 }
 
-#d
-{
-    margin:5px;
-	float:left;
-}
-
-#e
-{
-    margin:5px;
-	float:left;
-}
-
-#f
-{
-    margin:5px;
-	float:left;
-}
 
 .back
 {
@@ -111,28 +94,4 @@ h1
 #cscore
 {
 	color:#FF0033;
-}
-
-#ha
-{
-	float:left;
-	margin:5px;
-}
-
-#hb
-{
-	float:left;
-	margin:5px;
-}
-
-#hc
-{
-	float:left;
-	margin:5px;
-}
-
-#hd
-{
-	float:left;
-	margin:5px;
 }
