@@ -10,13 +10,13 @@ body
 	margin-top:200px;
 }
 
-#title, #a, #b, #c
+#title, #easy, #normal, #hard
 {
 	width:400px;
 	margin:auto;
 }
 
-#a,#b,#c
+#easy,#normal,#hard
 {
 	width:16%;
 	height: 100px;

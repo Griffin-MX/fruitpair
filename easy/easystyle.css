@@ -4,20 +4,20 @@
 	width:9000px;
 }
 
-#a
+#background
 {
     width:900px;
 	margin:auto;
 }
 
-#b
+#lefttable
 {
 	margin-left:15px;
 	float:left;
 	width:600px;
 }
 
-#c
+.cards
 {
     margin:5px;
 	float:left;
@@ -35,41 +35,41 @@ h1
 
 }
 
-#g
+#righttable
 {
 	float:right;
 	width:220px;
 }
 
-#h
+#top
 {
 	background-color:#C8C8C8;
 	height:60px;
 	margin:0 5px 0 5px;
 }
 
-#i
+#mid1
 {
 	background-color:#330000;
 	height:60px;
 	margin:0 5px 0 5px;
 }
 
-#j
+#space
 {
 	height:245px;
 	background-color:#00CCFF;
 	margin:0 5px 0 5px;
 }
 
-#k
+#mid2
 {
 	height:60px;
 	background-color:#33CC66;
 	margin:0 5px 0 5px;
 }
 
-#l
+#bottom
 {
 	height:60px;
 	background-color:#339933;
