@@ -12,7 +12,7 @@
 
 #lefttable
 {
-	margin-left:15px;
+	margin-left:150px;
 	float:left;
 	width:600px;
 }
@@ -63,7 +63,7 @@ h1
 	margin:0 5px 0 5px;
 }
 
-#bottom
+#exit
 {
 	height:60px;
 	background-color:#339933;

@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="../css/global.css"/>
 	<link rel="stylesheet" type="text/css" href="easystyle.css"/>
+	<script src="../js/js.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,8 @@
 		</div>
 		<div id="righttable">
 		    <div id="top">
-			    <p id="time"><b>TIME LIMIT</b></p>
+			    <p id="time"><b>TIME </b></p>
+				<p id="timing">00:00</p>
                 <!-- TODO: Should be a read-only text area here -->
 			    <!-- <input type="textarea" id="timer"/> -->
 			</div>
@@ -39,10 +41,10 @@
                 <!-- Placeholder -->
             </div>
 			<div id="mid2">
-			    <button class="transparent action">Retry</button>
+			    <button class="transparent action" onclick="location.reload()">Retry</button>
 			</div>
 			<div id="bottom">
-			    <button class="transparent action">Exit</button>
+			    <button class="transparent action" onclick="jump('../initial interface/basic.html')">Exit</button>
 			</div>
 		</div>
 	</div>
