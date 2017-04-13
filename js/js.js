@@ -3,8 +3,28 @@ function jump(address) {
 }
 var second=0;
 var minute=0;
-function timing()
+function timing(level)
 {
+    switch (level){
+        case 0:
+            if (minute>0){
+                alert("TIME OUT !!GG!!");
+                clearInterval(int);
+            }
+            break;
+        case 1:
+            if(minute>2){
+                alert("TIME OUT !!GAME OVER!!");
+                clearInterval(int);
+            }
+            break;
+        case 2:
+            if (minute>4){
+                alert("TIME OUT !!FIGHTING!!");
+                clearInterval(int);
+            }
+            break;
+    }
     second++;
     if (second<10)
     {
