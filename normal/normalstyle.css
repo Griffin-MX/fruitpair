@@ -32,6 +32,7 @@ h1
 {
 	float:right;
 	width:220px;
+
 }
 
 #top
@@ -46,6 +47,7 @@ h1
 	background-color:#330000;
 	height:60px;
 	margin:0 5px 0 5px;
+
 }
 
 #space
@@ -53,6 +55,7 @@ h1
 	height:245px;
 	background-color:#00CCFF;
 	margin:0 5px 0 5px;
+
 }
 
 #mid2
@@ -60,6 +63,7 @@ h1
 	height:60px;
 	background-color:#33CC66;
 	margin:0 5px 0 5px;
+
 }
 
 #bottom
@@ -72,6 +76,7 @@ h1
 #time
 {
     color:#FF00FF;
+
 }
 
 #cscore

@@ -1,7 +1,6 @@
 function jump(address) {
     window.location.href=address;
 }
-var int=setInterval("timing()",1000);
 var second=0;
 var minute=0;
 function timing()
