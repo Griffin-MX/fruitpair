@@ -2,7 +2,6 @@ function card_init(level) {
   var nPair = 0;
   var pic = [];
   var pos = [];
-  var buffer = "";
 
   switch (level) {
     case "easy":
@@ -19,19 +18,13 @@ function card_init(level) {
       return;
   }
 
-  let tmp = ranseq(18,1);
-  for (let i = 0; i < nPair * 2; i++) {
-    pic[i] = tmp[i] + ".jpg"; // Magic Cast.
-  }
-  delete tmp;
+  pic = ransel(1, 18, nPair);
+  pos = ranseq(nPair * 2, 1);
 
-  for (let i = 0; i < nPair * 2; i++) {
-    buffer += "<div class=\"cards\">"
-            +   "<img class=\"back\" type=\"button\" src=\"../img/" + pic[i] + "\"/>"
-            + "</div>";
+  for (let iPic = 0, iPos = 0; iPic < nPair; iPic++, iPos += 2) {
+    document.getElementById("pic" + pos[iPos]).src = "../img/" + pic[iPic] + ".jpg";
+    document.getElementById("pic" + pos[iPos+1]).src = "../img/words/" + pic[iPic] + ".jpg";
   }
 
-  document.getElementById('lefttable').innerHTML = buffer;
-  delete buffer;
   return;
 }
