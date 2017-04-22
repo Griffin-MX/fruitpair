@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dff29fd1-afcc-453d-bf1c-e719ccdb5743" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/easy/easy.html" afterPath="$PROJECT_DIR$/easy/easy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hard/hard.html" afterPath="$PROJECT_DIR$/hard/hard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/normal/normal.html" afterPath="$PROJECT_DIR$/normal/normal.html" />
-    </list>
+    <list default="true" id="dff29fd1-afcc-453d-bf1c-e719ccdb5743" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +47,8 @@
           <file leaf-file-name="hard.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/hard/hard.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="475">
-                  <caret line="121" column="62" lean-forward="false" selection-start-line="121" selection-start-column="62" selection-end-line="121" selection-end-column="62" />
+                <state relative-caret-position="-268">
+                  <caret line="109" column="64" lean-forward="true" selection-start-line="109" selection-start-column="64" selection-end-line="109" selection-end-column="64" />
                   <folding />
                 </state>
               </provider>
@@ -415,12 +410,12 @@
       <workItem from="1492006504987" duration="8866000" />
       <workItem from="1492069554435" duration="1315000" />
       <workItem from="1492132034863" duration="597000" />
-      <workItem from="1492850967424" duration="543000" />
+      <workItem from="1492850967424" duration="696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26959000" />
+    <option name="totallyTimeSpent" value="27112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
@@ -789,8 +784,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hard/hard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="121" column="62" lean-forward="false" selection-start-line="121" selection-start-column="62" selection-end-line="121" selection-end-column="62" />
+        <state relative-caret-position="-268">
+          <caret line="109" column="64" lean-forward="true" selection-start-line="109" selection-start-column="64" selection-end-line="109" selection-end-column="64" />
           <folding />
         </state>
       </provider>
