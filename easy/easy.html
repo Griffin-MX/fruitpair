@@ -14,16 +14,16 @@
 		</div>
 	    <div id="lefttable">
 		    <div class="cards">
-			    <img id="pic1" class="back" type="button" src="back.jpg"/>
+			    <img id="pic1" onclick="card_clicked(1)" class="back" type="button" src="back.jpg"/>
 			</div>
 			<div class="cards">
-			    <img id="pic2" class="back" type="button" src="back.jpg"/>
+			    <img id="pic2" onclick="card_clicked(2)" class="back" type="button" src="back.jpg"/>
 			</div>
 			<div class="cards">
-			    <img id="pic3" class="back" type="button" src="back.jpg"/>
+			    <img id="pic3" onclick="card_clicked(3)" class="back" type="button" src="back.jpg"/>
 			</div>
 			<div class="cards">
-			    <img id="pic4" class="back" type="button" src="back.jpg"/>
+			    <img id="pic4" onclick="card_clicked(4)" class="back" type="button" src="back.jpg"/>
 			</div>
 		</div>
 		<div id="righttable">
@@ -37,6 +37,7 @@
 			    <p id="cscore"><b>CURRENT SCORE</b></p>
                 <!-- TODO: Should be a read-only text area here -->
 			    <!-- <input type="textarea" id="score"/> -->
+				<p id="curr-score">0</p>
 			</div>
 			<div id="space">
             </div>
