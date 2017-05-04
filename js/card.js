@@ -1,7 +1,8 @@
+var pic = [];
+var pos = [];
+
 function card_init(level) {
   var nPair = 0;
-  var pic = [];
-  var pos = [];
 
   switch (level) {
     case "easy":
@@ -21,10 +22,87 @@ function card_init(level) {
   pic = ransel(1, 18, nPair);
   pos = ranseq(nPair * 2, 1);
 
-  for (let iPic = 0, iPos = 0; iPic < nPair; iPic++, iPos += 2) {
-    document.getElementById("pic" + pos[iPos]).src = "../img/" + pic[iPic] + ".jpg";
-    document.getElementById("pic" + pos[iPos+1]).src = "../img/words/" + pic[iPic] + ".jpg";
-  }
+  // for (let iPic = 0, iPos = 0; iPic < nPair; iPic++, iPos += 2) {
+  //   document.getElementById("pic" + pos[iPos]).src = "../img/" + pic[iPic] + ".jpg";
+  //   document.getElementById("pic" + pos[iPos+1]).src = "../img/words/" + pic[iPic] + ".jpg";
+  // }
 
   return;
+}
+
+var flipped = [];
+
+function card_clicked(idNum) {
+  if (flipped.length == 0) {
+    flipped.push(idNum);
+    document.getElementById("pic" + idNum).src = query_card_src(idNum);
+  } else {
+    // Flip the card first.
+    document.getElementById("pic" + idNum).src = query_card_src(idNum);
+
+    // Then check if the flipped card matches the previous flipped one.
+    let first_click = flipped.pop();
+    let second_click = idNum;
+    if ((
+       (query_card_pos_index(first_click) < query_card_pos_index(second_click))
+    && (query_card_pos_index(second_click) - query_card_pos_index(first_click) == 1)
+    && (query_card_pos_index(first_click) % 2 == 0)
+    ) || (
+       (query_card_pos_index(first_click) > query_card_pos_index(second_click))
+    && (query_card_pos_index(second_click) - query_card_pos_index(first_click) == -1)
+    && (query_card_pos_index(second_click) % 2 == 0)
+    )) {
+      // Matched.
+      score_inc(10);
+      // Disable the cards to prevent them from being clicked again.
+      document.getElementById("pic" + first_click).disabled = true;
+      document.getElementById("pic" + second_click).disabled = true;
+    } else {
+      // Unmatched.
+      score_dec(1);
+      setTimeout(card_flip_back, 1000, first_click, second_click);
+    }
+  }
+}
+
+function query_card_src(idNum) {
+  for (let i = 0; i < pos.length; i++) {
+    if (pos[i] == idNum) {
+      // return "../img/" + pic[i/2] + ".jpg";
+      if (i%2 == 0) {
+        return "../img/" + pic[Math.floor(i/2)] + ".jpg";
+      } else {
+        return "../img/words/" + pic[Math.floor(i/2)] + ".jpg";
+      }
+    }
+  }
+
+  throw ("Internal error occurred in query_card_src: " + idNUm + " cannot be found in pic");
+  return "";
+}
+
+function query_card_pos_index(idNum) {
+  for (let i = 0; i < pos.length; i++) {
+    if (pos[i] == idNum) {
+      return i;
+    }
+  }
+
+  throw ("Internal error occurred in query_card_pos_index: " + idNUm + " cannot be found in pos");
+  return "";
+}
+
+function score_inc(score) {
+  let curr_score = parseInt(document.getElementById('curr-score').innerHTML);
+  document.getElementById('curr-score').innerHTML = curr_score + score;
+}
+
+function score_dec(score) {
+  let curr_score = parseInt(document.getElementById('curr-score').innerHTML);
+  document.getElementById('curr-score').innerHTML = curr_score - score;
+}
+
+function card_flip_back(first_click, second_click) {
+  document.getElementById("pic" + first_click).src = "../img/back.jpg";
+  document.getElementById("pic" + second_click).src = "../img/back.jpg";
 }

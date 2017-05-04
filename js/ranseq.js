@@ -19,7 +19,7 @@ function ranseq(n, start) {
   for (let i = n - 1; i > 0; i--) {
     let j = getRandomIntInclusive(0,i);
     let tmp = a[i];
-    a[i] = a[j]
+    a[i] = a[j];
     a[j] = tmp;
   }
 
