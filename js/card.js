@@ -21,13 +21,13 @@ function card_init(level) {
   pic = ransel(1, 18, nPair);
   pos = ranseq(nPair * 2, 1);
 
-  // for (let iPic = 0, iPos = 0; iPic < nPair; iPic++, iPos += 2) {
+  // for (var iPic = 0, iPos = 0; iPic < nPair; iPic++, iPos += 2) {
   //   document.getElementById("pic" + pos[iPos]).src = "../img/" + pic[iPic] + ".jpg";
   //   document.getElementById("pic" + pos[iPos+1]).src = "../img/words/" + pic[iPic] + ".jpg";
   // }
 
   // NOTE: Firefox 53.0 on Linux: Cards won't be enabled if the last game disabled somwthing.
-  for (let i = 1; i <= nPair * 2; i++) {
+  for (var i = 1; i <= nPair * 2; i++) {
     document.getElementById("pic" + i).parentNode.disabled = false;
   }
 
@@ -47,10 +47,9 @@ function card_clicked(idNum) {
     document.getElementById("pic" + idNum).src = query_card_src(idNum);
     // Disable the cards to prevent them from being clicked again.
     document.getElementById("pic" + idNum).parentNode.disabled = true;
-
     // Then check if the flipped card matches the previous flipped one.
-    let first_click = flipped.pop();
-    let second_click = idNum;
+    var first_click = flipped.pop();
+    var second_click = idNum;
     if ((
        (query_card_pos_index(first_click) < query_card_pos_index(second_click))
     && (query_card_pos_index(second_click) - query_card_pos_index(first_click) == 1)
@@ -73,7 +72,7 @@ function card_clicked(idNum) {
 }
 
 function query_card_src(idNum) {
-  for (let i = 0; i < pos.length; i++) {
+  for (var i = 0; i < pos.length; i++) {
     if (pos[i] == idNum) {
       // return "../img/" + pic[i/2] + ".jpg";
       if (i%2 == 0) {
@@ -89,7 +88,7 @@ function query_card_src(idNum) {
 }
 
 function query_card_pos_index(idNum) {
-  for (let i = 0; i < pos.length; i++) {
+  for (var i = 0; i < pos.length; i++) {
     if (pos[i] == idNum) {
       return i;
     }
@@ -100,12 +99,12 @@ function query_card_pos_index(idNum) {
 }
 
 function score_inc(score) {
-  let curr_score = parseInt(document.getElementById('curr-score').innerHTML);
+  var curr_score = parseInt(document.getElementById('curr-score').innerHTML);
   document.getElementById('curr-score').innerHTML = curr_score + score;
 }
 
 function score_dec(score) {
-  let curr_score = parseInt(document.getElementById('curr-score').innerHTML);
+  var curr_score = parseInt(document.getElementById('curr-score').innerHTML);
   document.getElementById('curr-score').innerHTML = curr_score - score;
 }
 
@@ -117,8 +116,9 @@ function card_flip_back(first_click, second_click) {
 }
 
 function check_win() {
-  for (let i = 1; i <= nPair * 2; i++) {
-    if (document.getElementById("pic" + i).parentNode.disabled == false) {
+  for (var i = 1; i <= nPair * 2; i++) {
+    if (document.getElementById("pic" + i).parentNode.disabled === false) {
+      console.log(i);
       return;
     }
   }

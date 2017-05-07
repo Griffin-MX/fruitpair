@@ -55,7 +55,7 @@ h1
 	height:245px;
 	background-color:#00CCFF;
 	margin:0 5px 0 5px;
-
+	word-wrap: break-word;
 }
 
 #mid2
