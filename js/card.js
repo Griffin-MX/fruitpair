@@ -124,6 +124,6 @@ function check_win() {
   }
 
   // It wins.
-  alert("You win!");
+  alert("congratulations!");
   clearInterval(int); // `int` is in HTML inline script. Jeez.
 }
