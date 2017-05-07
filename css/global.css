@@ -31,6 +31,7 @@ button.action {
     border:  0;
     margin: 5px;
 	float: left;
+    background-color: rgba(0,0,0,0);
     box-shadow: 2px 2px 5px grey;
 }
 

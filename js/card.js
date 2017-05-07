@@ -26,6 +26,11 @@ function card_init(level) {
   //   document.getElementById("pic" + pos[iPos+1]).src = "../img/words/" + pic[iPic] + ".jpg";
   // }
 
+  // NOTE: Firefox 53.0 on Linux: Cards won't be enabled if the last game disabled somwthing.
+  for (let i = 1; i <= nPair * 2; i++) {
+    document.getElementById("pic" + i).parentNode.disabled = false;
+  }
+
   return;
 }
 
