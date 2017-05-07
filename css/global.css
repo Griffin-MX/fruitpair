@@ -33,3 +33,8 @@ button.action {
 	float: left;
     box-shadow: 2px 2px 5px grey;
 }
+
+#curr-score
+{
+    color: white;
+}
