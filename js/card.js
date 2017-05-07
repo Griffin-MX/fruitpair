@@ -1,9 +1,8 @@
 var pic = [];
 var pos = [];
+var nPair = 0;
 
 function card_init(level) {
-  var nPair = 0;
-
   switch (level) {
     case "easy":
       nPair = 2;
@@ -36,10 +35,12 @@ function card_clicked(idNum) {
   if (flipped.length == 0) {
     flipped.push(idNum);
     document.getElementById("pic" + idNum).src = query_card_src(idNum);
+    // Disable the cards to prevent them from being clicked again.
     document.getElementById("pic" + idNum).parentNode.disabled = true;
   } else {
     // Flip the card first.
     document.getElementById("pic" + idNum).src = query_card_src(idNum);
+    // Disable the cards to prevent them from being clicked again.
     document.getElementById("pic" + idNum).parentNode.disabled = true;
 
     // Then check if the flipped card matches the previous flipped one.
@@ -56,7 +57,8 @@ function card_clicked(idNum) {
     )) {
       // Matched.
       score_inc(10);
-      // Disable the cards to prevent them from being clicked again.
+      // Check if it wins.
+      check_win();
     } else {
       // Unmatched.
       score_dec(1);
@@ -107,4 +109,16 @@ function card_flip_back(first_click, second_click) {
   document.getElementById("pic" + second_click).src = "../img/back.jpg";
   document.getElementById("pic" + first_click).parentNode.disabled = false;
   document.getElementById("pic" + second_click).parentNode.disabled = false;
+}
+
+function check_win() {
+  for (let i = 1; i <= nPair * 2; i++) {
+    if (document.getElementById("pic" + i).parentNode.disabled == false) {
+      return;
+    }
+  }
+
+  // It wins.
+  alert("You win!");
+  clearInterval(int); // `int` is in HTML inline script. Jeez.
 }
