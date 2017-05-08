@@ -83,7 +83,7 @@ function query_card_src(idNum) {
     }
   }
 
-  throw ("Internal error occurred in query_card_src: " + idNUm + " cannot be found in pic");
+  throw ("Internal error occurred in query_card_src: " + idNum + " cannot be found in pic");
   return "";
 }
 
@@ -94,7 +94,7 @@ function query_card_pos_index(idNum) {
     }
   }
 
-  throw ("Internal error occurred in query_card_pos_index: " + idNUm + " cannot be found in pos");
+  throw ("Internal error occurred in query_card_pos_index: " + idNum + " cannot be found in pos");
   return "";
 }
 
