@@ -1,5 +1,6 @@
 /* global.css: the global style for all pages */
 
+/* Global background configuration */
 body
 {
     margin:auto;
@@ -8,10 +9,12 @@ body
     background-repeat: no-repeat;
 }
 
+/* Paragraphs have default margins that cause weird looks. Reset it. */
 p {
     margin: 0;
 }
 
+/* Transparent buttons. */
 button.transparent {
     padding: 0;
     border:  0;
@@ -19,12 +22,15 @@ button.transparent {
     background-color: rgba(0,0,0,0);
 }
 
+/* This is how action buttons on the right-bottom corner should be.
+   Use together with .transparent */
 button.action {
     width:  100%;
     height: 100%;
     font-size: 1.5em;
 }
 
+/* This is how the cards in the game should look like. */
 .cards
 {
     padding: 0;
