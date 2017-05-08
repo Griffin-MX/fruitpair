@@ -2,6 +2,11 @@ var pic = [];  // Array containing picutres that is used
 var pos = [];  // Array containing the picture position
 var nPair = 0; // Number of pairs.
 
+/**
+ * Initialize the game and card position.
+ *
+ * @param level {String} [in] Level, in "easy", "normal" or "hard".
+ */
 function card_init(level) {
   switch (level) {
     case "easy":
@@ -127,7 +132,6 @@ function query_card_src(idNum) {
    */
   for (var i = 0; i < pos.length; i++) {
     if (pos[i] == idNum) {
-      // return "../img/" + pic[i/2] + ".jpg";
       if (i%2 == 0) {
         return "../img/" + pic[Math.floor(i/2)] + ".jpg";
       } else {
