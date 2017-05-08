@@ -29,8 +29,8 @@ function ranseq(n, start) {
 /**
  * Generating `n` numbers from `start` to `end` without repetition, inclusive.
  *
- * This implementation mainly uses a "check list" to guarantee no repete numbers
- * be produced. However, this is not a good method, since:
+ * This implementation mainly uses a "check list" to guarantee no repeat numbers
+ * are produced. However, this is generally not a good method, since:
  *
  * - Specifying a super-wide range (end - start + 1) cost a lot memory;
  * - When `n` is close to range (end - start + 1) there will be many collisions.
