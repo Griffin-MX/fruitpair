@@ -10,18 +10,21 @@ function timing(level)
             if (second>=10){
                 alert("TIME OUT !!GG!!");
                 clearInterval(int);
+                card_all_face_on();
             }
             break;
         case 1:
             if(minute>=2){
                 alert("TIME OUT !!GAME OVER!!");
                 clearInterval(int);
+                card_all_face_on();
             }
             break;
         case 2:
             if (minute>=4){
                 alert("TIME OUT !!FIGHTING!!");
                 clearInterval(int);
+                card_all_face_on();
             }
             break;
     }

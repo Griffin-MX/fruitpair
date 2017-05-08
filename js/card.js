@@ -108,6 +108,14 @@ function score_dec(score) {
   document.getElementById('curr-score').innerHTML = curr_score - score;
 }
 
+function card_all_face_on() {
+  for (var i = 1; i <= pos.length; i++) {
+    document.getElementById("pic" + i).src = query_card_src(i);
+    // Disable them because generally the game can't proceed (often it wins)
+    document.getElementById("pic" + i).parentNode.disabled = true;
+  }
+}
+
 function card_flip_back(first_click, second_click) {
   document.getElementById("pic" + first_click).src = "../img/back.jpg";
   document.getElementById("pic" + second_click).src = "../img/back.jpg";
