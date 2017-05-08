@@ -7,19 +7,19 @@ function timing(level)
 {
     switch (level){
         case 0:
-            if (minute>0){
+            if (second>=10){
                 alert("TIME OUT !!GG!!");
                 clearInterval(int);
             }
             break;
         case 1:
-            if(minute>2){
+            if(minute>=2){
                 alert("TIME OUT !!GAME OVER!!");
                 clearInterval(int);
             }
             break;
         case 2:
-            if (minute>4){
+            if (minute>=4){
                 alert("TIME OUT !!FIGHTING!!");
                 clearInterval(int);
             }
